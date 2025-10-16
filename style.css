@@ -1,0 +1,246 @@
+body {
+  background-image: url("pic4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-color: rgb(20, 20, 20);
+}
+#parent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container {
+  background-color:rgba(94, 97, 93, 0.9);
+  width: 800px;
+  min-height: 100vh;
+  border: 1px solid blanchedalmond;
+  border-radius: 40px;
+  flex-direction: column;
+  /* align-self:center; 
+	flex-flow: column wrap;
+	align-items: center; */
+  margin:  auto;
+  flex-wrap: wrap;
+}
+h1 {
+  color: blanchedalmond;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px;
+  text-align: center; 
+}
+h4 {
+  color: rgb(204, 198, 188);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+  text-align: center; 
+}
+h3 {
+  display: none;
+  text-align: center; 
+  color: rgb(229, 224, 216);
+  font-size: 20px;
+}
+form {  
+  overflow: hidden;
+  padding: 50px; 
+  /* width: auto; */
+  display: flex;
+  flex-direction: column;
+  color: rgb(204, 198, 188);
+  margin-top: -30px;
+  margin-left: 80px;
+}
+label {
+  font-size: 18px;
+  padding: 5px;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 20px;
+	color: rgb(229, 224, 216);
+  text-align: center; 
+}
+.title {
+  color: rgb(90, 183, 183);
+  text-transform: uppercase;
+  margin-right: 15px;
+  white-space: nowrap;
+}
+#beads {
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center; 
+  white-space: nowrap;
+}
+input {
+  margin-left: 30px;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;  
+  border: 1px solid white;
+  position: relative;
+  margin-right: 5px;
+}
+input[type='radio']:checked:after {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  right:-1px;   
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  background-color: #C79D57;
+}
+.questionOne, .questionTwo, .questionThree, .questionFour, .questionFive,
+.questionSix,.questionSeven,.questionEight,.questionNine,.questionTen {
+  padding: 40px;
+}
+#show {
+  font-family: 'Libre Baskerville', serif;
+  margin: auto;
+  margin-top: 10px;
+  flex-direction: column;
+  font-size: 20px;
+  text-align: center;
+  color:rgb(90, 183, 183);
+  margin-bottom: 60px;
+}
+.answerOptions {
+  display: flex;
+  text-align: center;
+}
+#box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn {
+  margin-top: 10px;
+  background-color: #c557a9;
+  color: #fff;
+  font-family: 'Libre Baskerville', serif;
+  width: 50%; 
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 15px; 
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto; 
+  background-image: linear-gradient(to right, #9c3382 0%, #d983c4 51%, #e04bbb 100%);
+  align-self: center;
+}
+.btn:hover {
+  background-position: right center;
+}
+.clear {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16px;
+  padding: 15px;
+  cursor: pointer;
+}
+.clear:hover {
+  text-decoration: underline;
+}
+.row {
+  text-align: center;
+  color: rgb(229, 224, 216, 0.5);
+}
+@media all and (max-width: 820px) {
+.container {
+  width: 720px; 
+}
+form {
+  width: 700px;
+  padding: 5px;
+}
+h1 {
+  font-size: 26px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 18px;
+}
+#beads {
+  font-size: 14px;
+  padding: 2px;
+  margin-bottom: 2px;
+}
+label {
+  font-size: 14px;
+}
+.btn {
+  font-size: 16px;
+}
+}
+@media all and (max-width:540px) {
+.container {
+  width: 540px; 
+}
+form {
+  width: 370px;
+}
+.questionOne, .questionTwo, .questionThree, .questionFour, .questionFive,
+.questionSix,.questionSeven,.questionEight,.questionNine,.questionTen {
+  padding: 30px;
+}
+h1 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 16px;
+}
+h4 {
+  font-size: 16px;
+}
+#beads {
+  font-size: 14px;
+}
+label {
+  font-size: 14px;
+}
+.btn {
+  font-size: 14px;
+}
+}
+@media all and (max-width: 440px) {
+.container {
+  width: 440px;
+}
+form {
+  margin: 0;
+  padding: 0;
+}
+.questionOne, .questionTwo, .questionThree, .questionFour, .questionFive,
+.questionSix,.questionSeven,.questionEight,.questionNine,.questionTen {
+  padding: 20px;
+}
+h1 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 12px;
+}
+h4 {
+  font-size: 12px;
+  margin-left: 20px;
+}
+}
+@media all and (max-width: 344px) {
+.container {
+  width: 400px;
+}
+}

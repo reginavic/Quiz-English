@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="parent">
+  <div class="container">
+    <h1>TEST <br> English Language</h1>
+    <h4>Choose the right answer and find out your result.</h4>
+  <form>
+  <div class="questionOne">
+    <label><span class="title">Question 1.</span>I got up ... than my mother.</label>
+    <br>
+  <div class="answerOptions">
+    <span id="beads"><input type="radio" name="question1">early</span> 
+    <span id="beads"><input type="radio" name="question1">the earlier</span>
+    <span id="beads" class="answer"><input type="radio" name="question1" id="answer1">earlier</span> 
+  </div>
+    <h3>* I got up earlier than my mother. *</h3>
+  </div>
+  <div class="questionTwo">
+    <label><span class="title">Question 2.</span> ... you play tennis yesterday?</label>
+    <br>
+  <div class="answerOptions">
+    <span id="beads"><input type="radio" name="question2" >Do</span>
+    <span id="beads" class="answer"><input type="radio" name="question2" id="answer2">Did</span> 
+    <span id="beads"><input type="radio" name="question2">Have</span>
+  </div>
+    <h3>* Did you play tennis yesterday? *</h3>
+  </div>
+  <div class="questionThree">
+    <label><span class="title">Question 3.</span> She often ... in the swimming pool.</label>
+    <br>
+  <div class="answerOptions">
+    <span id="beads"><input type="radio" name="question3">swimming</span>
+    <span id="beads"><input type="radio" name="question3">swam</span>
+    <span id="beads" class="answer"><input type="radio" name="question3" id="answer3">swims</span>
+  </div>
+    <h3>* She often swims in the swimming pool. *</h3>
+  </div>
+  <div class="questionFour">
+    <label><span class="title">Question 4.</span> I ... football with my friends yesterday.</label>
+    <br> 
+  <div class="answerOptions">
+    <span id="beads"><input type="radio" name="question4">play </span>
+    <span id="beads"><input type="radio" name="question4">plays</span>
+    <span id="beads" class="answer"><input type="radio" name="question4" id="answer4">played</span>
+  </div>
+    <h3>* I played football with my friends yesterday. *</h3>
+  </div>
+  <div class="questionFive">
+    <label><span class="title">Question 5.</span> I ... you a very interesting book tomorrow.</label>
+    <br>
+  <div class="answerOptions">
+    <span id="beads"><input type="radio" name="question5" >give</span> 
+    <span id="beads" class="answer"><input type="radio" name="question5" id="answer5">wiil give</span>
+    <span id="beads"><input type="radio" name="question5">giving</span> 
+  </div>
+    <h3>* I will give you a very interesting book tomorrow. *</h3>
+  </div>
+  <div class="questionSix">
+    <label><span class="title">Question 6.</span> We ... in the garden now.</label>
+    <br>
+  <div class="answerOptions">
+    <span id="beads"><input type="radio" name="question6">work</span>
+    <span id="beads" class="answer"><input type="radio" name="question6" id="answer6">are working</span>
+    <span id="beads"><input type="radio" name="question6">is working</span>
+  </div>
+    <h3>* We are working in the garden now. *</h3>
+  </div>
+  <div class="questionSeven">
+    <label><span class="title">Question 7.</span> Today is the ... day of spring.</label>
+    <br>
+  <div class="answerOptions">
+    <span id="beads"><input type="radio" name="question7" >secondth</span>
+    <span id="beads" class="answer"><input type="radio" name="question7" id="answer7">second</span>
+    <span id="beads"><input type="radio" name="question7">two</span>
+  </div>
+    <h3>* Today is the second day of spring. *</h3>
+  </div>
+  <div class="questionEight">
+    <label><span class="title">Question 8.</span> Tigers are ... than elephants.</label>
+    <br>
+  <div class="answerOptions">
+    <span id="beads"><input type="radio" name="question8" >more fast</span>
+    <span id="beads" class="answer"><input type="radio" name="question8" id="answer8">faster</span>
+    <span id="beads"><input type="radio" name="question8">fast</span>
+  </div>
+    <h3>* Tigers are faster than elephants. *</h3>
+  </div>
+  <div class="questionNine">
+    <label><span class="title">Question 9.</span> My ... car is red.</label>
+    <br>
+  <div class="answerOptions">
+    <span id="beads"><input type="radio" name="question9" >father</span>
+    <span id="beads" class="answer"><input type="radio" name="question9" id="answer9">father`s</span>
+    <span id="beads"><input type="radio" name="question9">fathers`</span>
+  </div>
+    <h3>* My father`s car is red. *</h3>
+  </div>
+  <div class="questionTen">
+    <label><span class="title">Question 10.</span> My grandmother is sitting ...</label>
+    <br>
+  <div class="answerOptions">
+    <span id="beads"><input type="radio" name="question10" > in the sofa</span>
+    <span id="beads" class="answer"><input type="radio" name="question10" id="answer10">on the sofa</span>
+    <span id="beads"><input type="radio" name="question10"> at the sofa</span>
+  </div>
+    <h3>* My grandmother is sitting on the sofa. *</h3>
+  </div>
+  </form>
+  <p id="show"></p>   
+  <div id="box">
+  <button type="submit" class="btn">Check the answers</button>
+  <button class="clear">Again</button>
+  </div>
+  </div>
+  </div>
+  <footer>
+  <div class="row">
+    <p>The site was created for educational purposes only.</p>
+  </div>
+  </footer>
+<script src="index.js"></script>
+</body>
+</html>
